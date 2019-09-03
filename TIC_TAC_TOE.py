@@ -50,7 +50,7 @@ def main():
     posOccupied = []
 
     while choice:
-        userCh = input("Enter your choice : ")
+        userCh = input("Enter your choice (X or 0): ")
         if userCh == "0":
             cpuCh = 'X'
             choice = False
@@ -74,6 +74,8 @@ def main():
                         break
                 else:
                     positionTaken = False
+            elif pos > 9 :
+                print("Invalid choice")
             else:
                 positionTaken = False
 
